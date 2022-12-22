@@ -1,0 +1,158 @@
+.header {
+    max-width: 100%;
+    min-height: 70px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.create-user-btn {
+    cursor: pointer;
+    width: 250px;
+    height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #5d5da0;
+    color: #fff;
+    border: none;
+}
+.list-block {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.list {
+    margin-top: 30px;
+}
+.list-item {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-item-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 15px;
+}
+.list-item-privilege {
+    margin-right: 15px;
+}
+.privilege {
+    height: 35px;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+.privilege::-ms-expand { 
+    display: none;
+}
+.list-item-delete-btn {
+    background: red;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-wrapper {
+    padding: 30px;
+    width: 500px;
+    height: 370px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-modal {
+    cursor: pointer;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 5%;
+}
+.modal-input {
+    width: 320px;
+    height: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+.modal-btn {
+    cursor: pointer;
+    width: 328px;
+    height: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #5d5da0;
+    color: #fff;
+    border: none;
+}
+.black {
+    color: #000;
+}
+.red {
+    color: #ff0000;
+}
+.blue {
+    color: #0000ff;
+}
+@media screen and (max-width:614px) {
+    .header {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        text-align: center;
+    }
+    .create-user {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:591px) {
+    .privilege {
+        font-size: 12px;
+        padding: 0;
+    }
+    .list-item-delete-btn {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .modal-wrapper {
+        width: 370px;
+    }
+}
